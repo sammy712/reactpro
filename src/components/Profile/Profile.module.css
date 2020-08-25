@@ -1,0 +1,15 @@
+.content {
+    grid-area: c;
+    background-color: cornflowerblue;
+}
+
+.mainimg img {
+    width: auto;
+    height: 400px;
+}
+
+.postimg img {
+    width: 150px;
+    height: auto;
+
+}
