@@ -3,7 +3,7 @@ import s from './Profile.module.css';
 import MyPosts from "./MyPosts/MyPosts";
 const Profile = () => {
 
-    return <div className='content'>
+    return <div>
         <div className={s.mainimg}>
             <img src='https://img3.goodfon.ru/wallpaper/nbig/e/32/yaponiya-fudziyama-gora-vulkan.jpg'/>
         </div>
