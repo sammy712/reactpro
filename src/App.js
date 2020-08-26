@@ -7,6 +7,7 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
+import Sets from "./components/Sets/Sets";
 
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
                     <Route path='/profile' component={Profile}/>
                     <Route path='/news' component={News}/>
                     <Route path='/music' component={Music}/>
+                    <Route path='/setting' component={Sets} />
                 </div>
-                {/*<Profile />*/}
             </div>
         </BrowserRouter>
     );
