@@ -13,15 +13,17 @@ import Sets from "./components/Sets/Sets";
 function App() {
     return (
         <BrowserRouter>
-            <div className="app-wrapper">
-                <Header/>
-                <NavBar/>
-                <div className="app-wrapper-content">
-                    <Route path='/dialogs' component={Dialogs}/>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/music' component={Music}/>
-                    <Route path='/setting' component={Sets} />
+            <div className="body-wrapper">
+                <div className="app-wrapper">
+                    <Header/>
+                    <NavBar/>
+                    <div className="app-wrapper-content">
+                        <Route path='/dialogs' component={Dialogs}/>
+                        <Route path='/profile' component={Profile}/>
+                        <Route path='/news' component={News}/>
+                        <Route path='/music' component={Music}/>
+                        <Route path='/setting' component={Sets}/>
+                    </div>
                 </div>
             </div>
         </BrowserRouter>
