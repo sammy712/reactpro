@@ -11,15 +11,11 @@
     color: gold;
 }
 
+.messages {
+    padding: 10px;
+}
+
 .messages .message {
-    padding: 10px;
-}
-
-.message {
-    padding: 10px;
-}
-
-.dialog a {
     color: #3f4257;
     text-decoration: none;
 }
