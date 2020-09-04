@@ -1,0 +1,8 @@
+History API
+Тернарное выражение
+.map мапинг
+shift + f6 переименовать везде
+
+`<li>${name}</li>`; вместо "<li> + name + "</li>";
+
+BrowserRouter & HashRouter ?
