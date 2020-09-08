@@ -5,11 +5,11 @@ import {NavLink} from "react-router-dom";
 const DialogItem = (props) => {
     let path = "/dialogs/" + props.id;
     return (
-        <div>
+        <nav>
             <div className={d.dialog}>
                 <NavLink to={path} activeClassName={d.activeLink}>{props.name}</NavLink>
             </div>
-        </div>
+        </nav>
     )
 }
 
