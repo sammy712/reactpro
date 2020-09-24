@@ -1,8 +1,8 @@
 History API
 Тернарное выражение
-.map мапинг
+.map мапинг (метод массива)
 shift + f6 переименовать везде
 
 `<li>${name}</li>`; вместо "<li> + name + "</li>";
 
-BrowserRouter & HashRouter ?
+BrowserRouter & HashRouter Route ?

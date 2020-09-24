@@ -10,7 +10,7 @@ const FriendBar = (props) => {
     return (
         <div className={f.sidebarblock}>
             <h3>Friends</h3>
-            <div>
+            <div className={f.blockname}>
                 {friendElements}
             </div>
         </div>

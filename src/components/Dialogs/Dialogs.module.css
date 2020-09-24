@@ -23,3 +23,7 @@
 .dialog a.activeLink {
     color: gold;
 }
+
+.addtext {
+    padding: 10px;
+}

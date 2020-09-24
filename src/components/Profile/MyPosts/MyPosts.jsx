@@ -6,14 +6,21 @@ const MyPosts = (props) => {
 
     let postsElements = props.posts.map(p => <Post message={p.message} countlike={p.countLike + " " + "likes"}/>)
 
+    let newPostElement = React.createRef(); //добавление рефа для переменной newPostElement
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text);
+    }
+
     return <div className={s.postBlock}>
         <h3>My posts</h3>
         <div>
             <div>
-                <textarea></textarea>
+                <textarea ref={newPostElement}></textarea>  {/*определение рефа*/}
             </div>
             <div>
-                <button>Add post</button>
+                <button onClick={addPost}>Add post</button>
                 <button>Remove</button>
             </div>
         </div>
