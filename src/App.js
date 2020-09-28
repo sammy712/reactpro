@@ -10,6 +10,7 @@ import Music from "./components/Music/Music";
 import Sets from "./components/Sets/Sets";
 
 
+
 function App(props) {
 
     return (
@@ -19,7 +20,7 @@ function App(props) {
                     <Header/>
                     <NavBar state={props.state.sideBar}/>
                     <div className="app-wrapper-content">
-                        <Route path='/profile' render={() => <Profile state={props.state.profilePage}/>}/>
+                        <Route path='/profile' render={() => <Profile state={props.state.profilePage} addPost={props.addPost}/>}/>
                         <Route path='/news' component={News}/>
                         <Route path='/music' component={Music}/>
                         <Route path='/setting' component={Sets}/>
