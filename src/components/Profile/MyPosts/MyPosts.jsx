@@ -9,16 +9,20 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef(); //добавление рефа для переменной newPostElement
 
     let addPost = () => {
-        debugger;
         let text = newPostElement.current.value;
         props.addPost(text);
+    }
+
+    let onPostChange = () => {
+        let text = newPostElement.current.value;
+        console.log(text);
     }
 
     return <div className={s.postBlock}>
         <h3>My posts</h3>
         <div>
             <div>
-                <textarea ref={newPostElement}></textarea>  {/*определение рефа*/}
+                <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText}/> {/*определение рефа*/}
             </div>
             <div>
                 <button onClick={addPost}>Add post</button>
